@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--============= TITLE =============-->
+  <title>Fazil Dev</title>
+
+  <!--============= FONTS =============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--============= ICON =============-->
+  <link rel="icon" href="images/mf-logo-white.png">
+
+  <!--============= REMIX ICON =============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--============= AOS.CSS =============-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--============= TAILWIND CSS =============-->
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="./src/input.css" rel="stylesheet">
+</head>
+
+<body class="bg-primary">
+
+  <div id="preloader"></div>
+
+  <!--============= HEADER =============-->
+  <header class="fixed top-0 left-0 z-40 w-full px-4 shadow-md border-b-green-600 bg-secondary shadow-secondary">
+    <nav class="flex items-center justify-between h-header lg:h-[4rem] container-new">
+      <a href="index.html"><img src="images/mf-logo-white.png" class="w-8 lg:w-10 hover:scale-90" alt="logo"></a>
+
+      <div class="nav_menu bg-secondary" id="nav-menu">
+        <ul class="flex flex-col items-center gap-8 md:flex-row">
+          <li><a href="#home"
+              class="text-2xl font-bold uppercase md:text-lg lg:text-xl md:font-500 hover:text-light nav_link">Home</a>
+          </li>
+          <li><a href="#service"
+              class="text-2xl font-bold uppercase md:text-lg lg:text-xl md:font-500 hover:text-light nav_link">Service</a>
+          </li>
+          <li><a href="#work"
+              class="text-2xl font-bold uppercase md:text-lg lg:text-xl md:font-500 hover:text-light nav_link">Work</a>
+          </li>
+          <li><a href="#about"
+              class="text-2xl font-bold uppercase md:text-lg lg:text-xl md:font-500 hover:text-light nav_link">About</a>
+          </li>
+          <li><a href="#contact"
+              class="text-2xl font-bold uppercase md:text-lg lg:text-xl md:font-500 hover:text-light nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="md:hidden" id="nav-close">
+          <i class="absolute ri-close-line top-[1.2rem] right-[1.5rem] text-2xl cursor-pointer"></i>
+        </div>
+
+      </div>
+      <div class="md:hidden" id="nav-toggle">
+        <i class="text-xl cursor-pointer ri-menu-line"></i>
+      </div>
+
+    </nav>
+  </header>
+
+  <!--============= MAIN =============-->
+  <main class="overflow-hidden">
+
+    <!--============= HERO =============-->
+    <section class="px-8 section pt-sectiontop pb-sectionbottom" id="home">
+      <div class="container-new grid justify-center gap-20 md:flex md:flex-row md:items-center md:gap-[2rem]">
+        <div class="grid gap-4 px-8">
+          <h2 class="text-3xl uppercase font-700 lg:text-6xl">I'm a <span class="text-light">web Developer</span> based
+            in
+            sri
+            lanka</h2>
+          <p class="lg:text-xl">Hey, my name is <span class="text-light">Mohomed Fazil</span>, I like to craft solid and
+            scalable frontend & backend products
+            with great user experiences.</p>
+          <div class="mt-8">
+            <a href="projects.html"
+              class="px-4 py-3 duration-300 rounded-md hover:shadow-lg hover:shadow-light lg:text-lg font-700 bg-light text-primary">Explore My Projects</a>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="w-[200px] lg:w-[350px] place-self-center">
+            <img class="bottom-0 right-0 animate-[wiggle_4s_ease-in-out_infinite]" src="images/hero-animated-img.png"
+              alt="main">
+          </div>
+          <div class="w-[350px] lg:w-[450px] place-self-center">
+            <img class="bottom-0" src="images/hero-base-img.png" alt="base">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--============= SERVICES =============-->
+    <section class="px-4 section pt-sectiontop pb-sectionbottom" id="service">
+
+      <div class="container-new">
+        <div class="mb-8 text-center" data-aos="fade-up">
+          <h3 class="text-light font-700 lg:text-3xl">SERVICES</h3>
+          <h2 class="font-700 lg:text-xl">SERVICES THAT I PROVIDE</h2>
+        </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="w-full px-8 py-12 duration-500 rounded-xl bg-secondary hover:shadow-lg hover:shadow-light"
+            data-aos="fade-up">
+            <div class="grid w-12 h-12 rounded-md bg-light">
+              <i class="self-center text-2xl justify-self-center text-primary ri-quill-pen-line"></i>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-600">Graphic Designing</h2>
+              <p class="mt-2 text-gray-300">With industry-leading tools and one-click transformations, Photoshop is the
+                first choice for digital image editing and graphic design.</p>
+            </div>
+          </article>
+
+          <article class="w-full px-8 py-12 duration-500 rounded-xl bg-secondary hover:shadow-lg hover:shadow-light"
+            data-aos="fade-up">
+            <div class="grid w-12 h-12 rounded-md bg-light">
+              <i class="self-center text-2xl justify-self-center text-primary ri-code-s-slash-line"></i>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-600">Web Development</h2>
+              <p class="mt-2 text-gray-300">Passionate about web development and excited to learn more. Developed and
+                maintained web applications using PHP, JavaScript, HTML5, CSS3, MySQL database.</p>
+            </div>
+          </article>
+
+          <article class="w-full px-8 py-12 duration-500 hover:shadow-lg hover:shadow-light rounded-xl bg-secondary"
+            data-aos="fade-up">
+            <div class="grid w-12 h-12 rounded-md bg-light">
+              <i class="self-center text-2xl justify-self-center text-primary ri-terminal-fill"></i>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-600">Software Development</h2>
+              <p class="mt-2 text-gray-300">Developed and implemented software applications using SCRUM Agile methods.
+                Modified Database schema to fit in new features in Oracle, MySql databases.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!--============= WORK =============-->
+    <section class="px-4 section pt-sectiontop pb-sectionbottom" id="work">
+      <div class="container-new">
+        <div class="mb-8 text-center" data-aos="fade-up">
+          <h3 class="text-light font-700 lg:text-3xl">WORK</h3>
+          <h2 class="uppercase font-700 lg:text-xl">My Recent Projects</h2>
+        </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="overflow-hidden duration-500 rounded-lg bg-secondary hover:shadow-lg hover:shadow-light"
+            data-aos="fade-up">
+            <img class="duration-300 rounded-t-lg hover:scale-105" src="images/project-1.jpg" alt="">
+
+            <div class="grid gap-3 px-6 py-6">
+              <h2 class="font-700">Bridal Gallery Salon Website</h2>
+              <p class="text-gray-300">Full-stack web development project with amazing UI and functional backend. The
+                project is done for the salon Bridal Gallery including student registration with an admin panel.</p>
+              <div>
+                <a href="#"
+                  class="p-2 duration-500 rounded-sm text-light hover:bg-light hover:text-primary hover:shadow-lg hover:shadow-green-900">Visit
+                  Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden duration-500 rounded-lg bg-secondary hover:shadow-lg hover:shadow-light"
+            data-aos="fade-up">
+            <img class="duration-300 rounded-t-lg hover:scale-105" src="images/project-2.jpg" alt="">
+
+            <div class="grid gap-3 px-6 py-6">
+              <h2 class="font-700">Watch Collecton Website</h2>
+              <p class="text-gray-300">Fully one-page UI design with HTML, CSS & JS. Attractive components and colors
+                give a super user experience.</p>
+              <div>
+                <a href="projects/watches/index.html"
+                  class="p-2 duration-500 rounded-sm text-light hover:bg-light hover:text-primary hover:shadow-lg hover:shadow-green-900">Visit Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden duration-500 rounded-lg bg-secondary hover:shadow-lg hover:shadow-light"
+            data-aos="fade-up">
+            <img class="duration-300 rounded-t-lg hover:scale-105" src="images/project-3.jpg" alt="">
+
+            <div class="grid gap-3 px-6 py-6">
+              <h2 class="font-700">FZ Covers Music Website</h2>
+              <p class="text-gray-300">Full-stack web development project with attractive UI designs and functional
+                backend. This project is based on the Youtube channel FZ Covers including an admin panel with music
+                notes download function.</p>
+              <div>
+                <a href="https://www.fzcovers.online/"
+                  class="p-2 duration-500 rounded-sm text-light hover:bg-light hover:text-primary hover:shadow-lg hover:shadow-green-900">Visit
+                  Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-end mt-4">
+          <a href="projects.html" class="p-2 duration-500 rounded-sm text-light hover:underline">Read
+            More</a>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!--============= ABOUT =============-->
+    <section class="px-4 section pt-sectiontop pb-sectionbottom" id="about">
+      <div class="container-new">
+        <div class="mb-8 text-center" data-aos="fade-up">
+          <h3 class="text-light font-700 lg:text-3xl">ABOUT</h3>
+          <h2 class="uppercase font-700 lg:text-xl">My Education & Experiance</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+
+          <div>
+            <h3 class="uppercase font-600 lg:text-lg" data-aos="zoom-in">EDUCATION</h3>
+            <article
+              class="w-full p-4 mt-8 duration-500 lg:h-[11rem] rounded-xl bg-secondary hover:shadow-lg hover:shadow-light"
+              data-aos="zoom-in">
+              <div class="mt-4">
+                <h2 class="font-600">Collage</h2>
+                <p class="text-light">Wayamba Royal Collage (2018 - 2021)</p>
+                <p class="mt-2 text-gray-300">Enter to Wayamba Royal Collage till end of the Advanced Level Examination.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="w-full p-4 mt-8 duration-500 lg:h-[11rem] rounded-xl bg-secondary hover:shadow-lg hover:shadow-light"
+              data-aos="zoom-in">
+              <div class="mt-4">
+                <h2 class="font-600">BEng.(Hons) in Software Engineering</h2>
+                <p class="text-light">Birmingham City University (2021 onwards - Undergraduated)</p>
+                <p class="mt-2 text-gray-300">While studying A/L's, I started a degree program in Java Insitute for
+                  Advanced Technology for (BEng/ BSc) Software Engineering Degree.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="">
+            <h3 class="uppercase font-600 lg:text-lg" data-aos="zoom-in">Experiance</h3>
+            <article
+              class="w-full p-4 mt-8 duration-500 lg:h-[11rem] rounded-xl bg-secondary hover:shadow-lg hover:shadow-light"
+              data-aos="zoom-in">
+              <div class="mt-4">
+                <h2 class="font-600">Founder</h2>
+                <p class="text-light">Onlink Solution (2022 onwards)</p>
+                <p class="mt-2 text-gray-300">Founder at Software Company named Onlink Solution</p>
+              </div>
+            </article>
+
+            <article
+              class="w-full p-4 mt-8 duration-500 lg:h-[11rem] rounded-xl bg-secondary hover:shadow-lg hover:shadow-light"
+              data-aos="zoom-in">
+              <div class="mt-4">
+                <h2 class="font-600">Web Developer & Software Developer</h2>
+                <p class="text-light">Fiverr (2021 onwards)</p>
+                <p class="mt-2 text-gray-300">While pursuring my degree, I was freelancing at Fiverr in Web Development
+                  &
+                  Software Application development.</p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--============= BRANDS =============-->
+    <section class="px-4 section pt-sectiontop pb-sectionbottom" id="contact">
+      <div class="container-new">
+        <div class="mb-8 text-center" data-aos="fade-up">
+          <h3 class="text-light font-700 lg:text-3xl">BRANDS</h3>
+          <h2 class="uppercase font-700 lg:text-xl">BRANDS THAT I COLLABORATE WITH</h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:gap-16">
+          <img class="self-center duration-300 justify-self-center opacity-60 hover:opacity-90"
+            src="images/company-1.png" alt="" data-aos="flip-left">
+          <img class="self-center duration-300 justify-self-center opacity-60 hover:opacity-90"
+            src="images/company-2.png" alt="" data-aos="flip-left">
+          <img class="self-center duration-300 justify-self-center opacity-60 hover:opacity-90"
+            src="images/company-3.png" alt="" data-aos="flip-left">
+          <img class="self-center duration-300 justify-self-center opacity-60 hover:opacity-90"
+            src="images/company-4.jpg" alt="" data-aos="flip-left">
+        </div>
+
+      </div>
+    </section>
+
+    <!--============= LET'S START =============-->
+    <section class="px-4 pt-8 section pb-sectionbottom">
+      <div class="container-new">
+        <div class="grid items-center justify-center gap-8 px-4 py-16 rounded-lg md:grid-cols-3 bg-secondary">
+          <h3 class="text-2xl text-center text-light font-700 lg:text-4xl">Start a project</h3>
+          <p class="text-center">Interested in working together? We should queue up a time to chat. I’ll buy the coffee.
+          </p>
+          <a href="mailto: contact.mhdfazil@gmail.com"
+            class="p-4 border-2 rounded-xl hover:bg-light hover:text-primary font-600 justify-self-center border-light">Let's
+            do this</a>
+        </div>
+      </div>
+    </section>
+
+    <!--============= CONTACT =============-->
+    <!-- <section class="section px-4 pt-sectiontop pb-[4rem]" id="contact">
+      <div class="container-new">
+        <div class="mb-8 text-center">
+          <h3 class="text-light font-700 lg:text-3xl">CONTACT</h3>
+          <h2 class="uppercase font-700 lg:text-xl">Interested in working together? Let's talk</h2>
+        </div>
+
+        <div class="grid gap-4 lg:mx-[10rem] xl:mx-[15rem]">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <input type="text"
+              class="px-2 py-3 bg-gray-200 rounded-sm outline-none text-primary focus:shadow-md focus:shadow-light"
+              placeholder="Enter your name" required>
+            <input type="email"
+              class="px-2 py-3 bg-gray-200 rounded-sm outline-none text-primary focus:shadow-md focus:shadow-light"
+              placeholder="Enter your email" required>
+          </div>
+
+          <input type="text"
+            class="px-2 py-3 bg-gray-200 rounded-sm outline-none text-primary focus:shadow-md focus:shadow-light"
+            placeholder="Enter your subject" required>
+          <textarea id="" rows="5"
+            class="px-2 py-3 bg-gray-200 rounded-sm outline-none text-primary focus:shadow-md focus:shadow-light"
+            placeholder="Enter your message" required></textarea>
+
+          <button class="py-4 border-none font-600 text-primary bg-light">SEND</button>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="px-4 pt-8 border-t-2 section border-light pb-sectionbottom bg-primary">
+    <div class="flex flex-col gap-4 text-center md:items-center md:justify-between container-new md:flex-row">
+      <span class="text-sm">&copy; 2023-2024 All rights reserved to Mhd Fazil.</span>
+      <div>
+        <a href="https://web.facebook.com/mohomed.fazil.9028"><i
+            class="p-2 text-2xl rounded-full cursor-pointer ri-facebook-circle-line hover:text-light bg-secondary"></i></a>
+        <a href="https://www.instagram.com/i.fazil_official"><i
+            class="p-2 text-2xl rounded-full cursor-pointer ri-instagram-line hover:text-light bg-secondary"></i></a>
+        <a href="https://twitter.com/mohomedfazil_"><i
+            class="p-2 text-2xl rounded-full cursor-pointer ri-twitter-x-line hover:text-light bg-secondary"></i></a>
+        <a href="https://github.com/MohomedFazil"><i
+            class="p-2 text-2xl rounded-full cursor-pointer ri-github-fill hover:text-light bg-secondary"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!--============= AOS.JS =============-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--============= SCRIPT.JS =============-->
+  <script src="src/script.js"></script>
+
+</body>
+
+</html>
